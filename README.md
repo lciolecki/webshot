@@ -1,4 +1,5 @@
 Webshot screen server
+==========================
 
 Webshot Screen Server it's an web application for generate website screenshots. System is based on CutyCapt application (http://cutycapt.sourceforge.net). It's allows you to take screenshots of any web pages and save them as images in png formats. Application was created in PHP technology and uses Zend Framework whith Doctrine 2.
 
