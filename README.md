@@ -16,7 +16,7 @@ Avaiable options: url,min-width,min-height,max-wait,delay,user-style-path,user-s
         }
     }
     
-**Important**: You must do composer install -o
+**Important**: For property install, please do: composer install -o
     
 #Sample use in Zend Framework
 
@@ -44,7 +44,7 @@ Avaiable options: url,min-width,min-height,max-wait,delay,user-style-path,user-s
               $this->_helper->viewRenderer->setNoRender(true);
               $this->_helper->layout->disableLayout();
               
-              $content = file_get_contents('http://webshot.loc/system/image/hash/22b46f4bca9fc167e041e9a15ab46f19');
+              $content = file_get_contents($return['image']);
               $this->getResponse()->setHeader('Content-type', 'image/png');
               $this->getResponse()->setBody($content);
               $this->getResponse()->sendResponse();  
