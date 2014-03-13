@@ -12,6 +12,7 @@
         "spekkionu/zfdebug": "dev-master",
         "beberlei/DoctrineExtensions" : "dev-master",
         "komola/bootstrap-zend-framework": "dev-master",
+        "lciolecki/php-library": "dev-master",
         "lciolecki/zf-extensions-library": "dev-master"
     },
     "autoload": {

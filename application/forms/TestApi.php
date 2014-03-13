@@ -37,9 +37,8 @@ class Webshot_Form_TestApi extends Webshot_Form
             'validators' => array(
                 array(new Extlib\Validate\Url()),
             ),
-            'description' => 'With http://',
             'attribs' => array(
-                'placeholder' => 'http://'
+                'placeholder' => 'http://google.pl'
             ),
         ));
         

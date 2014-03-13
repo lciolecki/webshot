@@ -208,6 +208,8 @@ class Webshot_Logic_CutyCapt extends Webshot_Logic_Abstract
             throw new Extlib\Exception(\translate('No url.'), Response::CODE_NOT_ACCEPTABLE);
         }
         
+        $return['url'] = \Extlib\Utils::getInstance()->filterUrl($return['url']);
+        
         $urlValidator = new \Extlib\Validate\Url();
         if (false === $urlValidator->isValid($return['url'])) {
             throw new Extlib\Exception(sprintf(\translate("Url: '% s' is invalid."), $return['url']), Response::CODE_NOT_ACCEPTABLE);
