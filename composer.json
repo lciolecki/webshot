@@ -4,7 +4,7 @@
     "description": "Webshot screen server - take screenshots web pages",
     "type": "Web application",
     "keywords": ["php", "webshot", "screen", "server" ],
-    "homepage": "",
+    "homepage": "http://webshot.mart.linuxpl.info",
     "license": "BSD-3-Clause",
     "require": {
         "php": ">=5.4",
