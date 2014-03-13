@@ -1,0 +1,27 @@
+{
+    "name": "lciolecki/webshot",
+    "author": "Lukasz Ciolecki",
+    "description": "Webshot screen server - take screenshots web pages",
+    "type": "Web application",
+    "keywords": ["php", "webshot", "screen", "server" ],
+    "homepage": "",
+    "license": "BSD-3-Clause",
+    "require": {
+        "php": ">=5.4",
+        "guilhermeblanco/zendframework1-doctrine2": "dev-master",
+        "spekkionu/zfdebug": "dev-master",
+        "beberlei/DoctrineExtensions" : "dev-master",
+        "komola/bootstrap-zend-framework": "dev-master",
+        "lciolecki/zf-extensions-library": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "Webshot_": "library/"
+        },
+        "files": [
+            "library/functions.php"
+        ]
+    }
+}
+
+

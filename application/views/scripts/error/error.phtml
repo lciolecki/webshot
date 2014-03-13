@@ -1,0 +1,25 @@
+<h1><?php echo $this->translate('System napotkał na błąd:');?></h1>
+<h2><?php echo $this->message ?></h2>
+
+<?php if (isset($this->exception)): ?>
+
+<h3>Exception information:</h3>
+<p>
+    <b>Class name:</b> <?php echo get_class($this->exception); ?>
+    <br>
+    <b>Message:</b> <?php echo $this->exception->getMessage() ?>
+</p>
+
+<h3>Stack trace:</h3>
+<pre><?php echo $this->exception->getTraceAsString() ?></pre>
+
+<h3>Request Parameters:</h3>
+<pre><?php echo $this->escape(var_export($this->request->getParams(), true)) ?></pre>
+
+<?php if (isset($this->details)): ?>
+    <h3>Details:</h3>
+    <pre><?php echo $this->escape(var_export($this->details, true)) ?></pre>
+<?php endif ?>
+
+<?php endif ?>
+

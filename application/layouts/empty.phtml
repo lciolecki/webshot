@@ -1,0 +1,28 @@
+<?php echo $this->doctype() . PHP_EOL; ?>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" <?php echo 'lang="'. $this->language .'"'; ?>> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" <?php echo 'lang="'. $this->language .'"'; ?>> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" <?php echo 'lang="'. $this->language .'"'; ?>> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" <?php echo 'lang="'. $this->language .'"'; ?>> <!--<![endif]-->
+<head>
+<?php 
+echo $this->headMeta() . PHP_EOL;
+echo $this->headLink() . PHP_EOL;
+echo $this->headScript() . PHP_EOL;
+echo $this->headTitle() . PHP_EOL;
+echo $this->headStyle();
+?>
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <div role="main" class="contener">
+        <?php echo $this->layout()->content; ?>
+    </div>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

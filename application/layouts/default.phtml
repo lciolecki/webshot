@@ -1,0 +1,84 @@
+<?php echo $this->doctype() . PHP_EOL; ?>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" <?php echo 'lang="'. $this->language .'"'; ?>> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" <?php echo 'lang="'. $this->language .'"'; ?>> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" <?php echo 'lang="'. $this->language .'"'; ?>> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" <?php echo 'lang="'. $this->language .'"'; ?>> <!--<![endif]-->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,follow">
+    <!--[if lt IE 9]>
+        <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<?php     
+echo $this->headMeta() . PHP_EOL;
+
+echo $this->headLink(array('rel' => 'favicon', 'href' => $this->media('favicon.ico')),'PREPEND')
+          ->appendStylesheet($this->media('/css/bootstrap.min.css')) 
+          ->appendStylesheet($this->media('/css/docs.css')) 
+          ->appendStylesheet($this->media('/css/bootstrap-responsive.min.css'))
+          ->appendStylesheet($this->media('/css/style.css')). PHP_EOL;
+
+echo $this->headScript()->appendFile('https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+                        ->appendFile($this->media('/js/bootstrap.min.js')) . PHP_EOL;
+
+echo $this->headStyle() . PHP_EOL;
+echo $this->headTitle() . PHP_EOL;
+?>    
+</head>
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+    <!-- Navbar ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li class="active">
+                            <a href="<?php echo $this->url(array('controller' =>'index', 'action' => 'index'), null, true); ?>">
+                                <?php echo $this->translate('Home'); ?>        
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="http://lukasz.ciolecki.pl">
+                                <?php echo $this->translate('Contact'); ?>        
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Subhead ================================================== -->
+    <header class="jumbotron subhead" id="overview">
+        <div class="container">
+            <h1><?php echo $this->translate('Webshot screen server'); ?></h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <?php echo $this->layout()->content; ?>
+    </div>
+
+    <!-- Footer ================================================== -->
+    <footer class="footer">
+        <div class="container">
+            <p>Designed and built with all the love in the world by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
+            <p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+            <p><a href="http://glyphicons.com">Glyphicons Free</a> licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+            <ul class="footer-links">
+                <li>
+                    <a href="http://lukasz.ciolecki.pl">
+                        <?php echo $this->translate('About me'); ?>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
