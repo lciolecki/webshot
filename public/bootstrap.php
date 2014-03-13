@@ -7,7 +7,7 @@ defined('PROJECT_PATH') || define('PROJECT_PATH', realpath(dirname(__FILE__) . '
 defined('APPLICATION_PATH') || define('APPLICATION_PATH', realpath(dirname(__FILE__) . '/../application'));
 
 // Define application environment
-defined('APPLICATION_ENV') || define('APPLICATION_ENV', (getenv('APPLICATION_ENV') ? getenv('APPLICATION_ENV') : 'development'));
+defined('APPLICATION_ENV') || define('APPLICATION_ENV', (getenv('APPLICATION_ENV') ? getenv('APPLICATION_ENV') : 'production'));
 
 /* Zaladowanie autoloadera compossera */
 require_once(PROJECT_PATH . '/vendor/autoload.php');
