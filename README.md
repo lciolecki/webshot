@@ -16,6 +16,8 @@ Avaiable options: url,min-width,min-height,max-wait,delay,user-style-path,user-s
         }
     }
     
+*Important*: You mast do composer install -o
+    
 #Sample use in Zend Framework
 
     public function webshotAction()
