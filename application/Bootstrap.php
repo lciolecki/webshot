@@ -65,20 +65,22 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
     
     protected function _initDebug()
     {
-        $options = array(
-            'plugins' => array(
-                'Html',
-                'File',
-                'Exception',
-                'Memory',
-                'Time',
-            )
-        );
+        if (APPLICATION_ENV === 'development') {
+            $options = array(
+                'plugins' => array(
+                    'Html',
+                    'File',
+                    'Exception',
+                    'Memory',
+                    'Time',
+                )
+            );
 
-        $debug = new ZFDebug_Controller_Plugin_Debug($options);
-        $this->bootstrap('frontController');
-        $frontController = $this->getResource('frontController');
-        $frontController->registerPlugin($debug);
+            $debug = new ZFDebug_Controller_Plugin_Debug($options);
+            $this->bootstrap('frontController');
+            $frontController = $this->getResource('frontController');
+            $frontController->registerPlugin($debug);    
+        }
     }
 }
 
