@@ -1,7 +1,7 @@
 {
     "name": "lciolecki/webshot",
     "author": "Lukasz Ciolecki",
-    "description": "Webshot screen server - take screenshots web pages",
+    "description": "PHP application for generate  screenshot web pages",
     "type": "Web application",
     "keywords": ["php", "webshot", "screen", "server" ],
     "homepage": "http://webshot.ciolecki.pl",
