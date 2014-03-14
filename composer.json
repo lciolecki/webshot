@@ -2,7 +2,7 @@
     "name": "lciolecki/webshot",
     "author": "Lukasz Ciolecki",
     "description": "PHP application for generate  screenshot web pages",
-    "type": "Web application",
+    "type": "application",
     "keywords": ["php", "webshot", "screen", "server" ],
     "homepage": "http://webshot.ciolecki.pl",
     "license": "BSD-3-Clause",
