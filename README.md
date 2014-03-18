@@ -11,9 +11,8 @@ Avaiable options: url,min-width,min-height,max-wait,delay,user-style-path,user-s
 ##Installation using Composer
 
     {
+        "minimum-stability": "dev",
         "require": {
-            "lciolecki/php-library": "dev-master", 
-            "lciolecki/zf-extensions-library" : "dev-master",
             "lciolecki/webshot": "dev-master"
         }
     }
