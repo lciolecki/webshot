@@ -11,12 +11,13 @@ Avaiable options: url,min-width,min-height,max-wait,delay,user-style-path,user-s
 ##Installation using Composer
 
     {
+        "minimum-stability": "dev",
         "require": {
             "lciolecki/webshot": "dev-master"
         }
     }
     
-**Important**: For property install, please do: composer install -o
+**Important**: For property install, please use: composer install -o
     
 #Sample use in Zend Framework
 
